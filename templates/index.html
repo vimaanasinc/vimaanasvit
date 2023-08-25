@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/css/tailwind.css" rel="stylesheet">
+    <link href="./static/css/custom.css" rel="stylesheet">
+    <link rel="icon" href="./static/images/logo.webp" type="image/x-icon">
+    <script defer src="./static/js/app.js"></script>
+    <title>Vimaanas Inc SAE-VIT</title>
+</head>
+<body class="bg-slate-950">
+
+    <!-- Secondary navbar with "Sponsorship brochure DOWNLOAD" button -->
+    <div id="download">
+      <div class="flex justify-center bg-gray-800 p-4">
+        <div class="flex items-center space-x-4">
+            <span class="text-white font-semibold text-sm md:text-xl">Sponsorship Brochure</span>
+            <a href="./static/images/brochure.pdf" download class="download-button md:text-base">
+                Download
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="loading-screen flex justify-center items-center fixed inset-0 bg-black text-white">
+        <img class="plane w-44 absolute" src="./static/images/loadingplane.webp" alt="Plane">
+        <img class="logo w-44 absolute" src="./static/images/logo.webp" alt="Logo">
+    </div>
+
+    <div class="website-content opacity-0">
+      <!-- Navbar -->
+      <div class="">
+        <hr class="border-gray-400 border-t-2 md:border-t-2 mx-30">
+        <nav class="flex items-center justify-between md:justify-evenly p-2 md:p-1 bg-gray-800">
+            <div class="flex items-center">
+                <img class="h-14 md:h-20 w-auto mr-2" src="./static/images/logo.webp" alt="Logo">
+                <span class="hidden md:inline text-2xl font-semibold text-white">Team Vimaanas Inc</span>
+                <span class="md:hidden text-lg font-semibold text-white">Vimaanas Inc</span>
+            </div>
+
+            <div class="hidden text-gray-100 md:flex space-x-4">
+                <a href="#Achievements" class="navbar-link">Achievements</a>
+                <a href="#Departments" class="navbar-link">Departments</a>
+                <a href="#Team" class="navbar-link">Team</a>
+                <a href="#Gallery" class="navbar-link">Gallery</a>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="focus:outline-none">
+                    <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile menu (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 p-2">
+            <a href="#Achievements" class="block text-center mx-2 text-gray-100 py-2">Achievements</a>
+            <a href="#Departments" class="block text-center mx-2 text-gray-100 py-2">Departments</a>
+            <a href="#Team" class="block text-center mx-2 text-gray-100 py-2">Team</a>
+            <a href="#Gallery" class="block text-center mx-2 text-gray-100 py-2">Gallery</a>
+        </div>
+        
+      </div>
+        <!-- Video Section -->
+        <section>
+          <video id="videoPlayer" controls autoplay class="w-full">
+            <source src="./static/trailer.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>        
+        </section>
+    </div>
+
+    <section id="Achievements" class="px-8 md:px-96">
+      <h1 class="md:text-4xl text-2xl font-medium my-8 text-white text-center tracking-widest">ACHIEVEMENTS</h1>
+      <img src="./static/images/achievements.png" alt="" srcset="">
+    </section>
+
+    <!-- DEPARTMENTS -->
+    <section id="Departments" class="px-8 md:px-96">
+      <h1 class="md:text-4xl text-2xl font-medium my-8 text-white text-center tracking-widest">DEPARTMENTS</h1>
+    </section>
+
+    <div class="lg:mx-24 flex flex-wrap justify-center">
+      <div class="rounded-xl bg-gray-800 shadow-xl my-8 mx-10 md:w-1/3 lg:w-1/4">
+        <img src="./static/images/design.webp" class="rounded-t-xl my-5" alt="">
+        <div class="text-white mx-4">
+          <div class="font-bold text-2xl">DESIGN</div>
+          <div class="py-2 lg:text-lg mb-2">
+            <ul class="list-disc list-inside pl-6">
+              <li class="mb-2">Analyzes requirements, constraints, and configures the aircraft.</li>
+              <li class="mb-2">Selects components, conducts stability analysis, and optimizes aerodynamics using software.</li>
+              <li class="mb-2">Balances trade-offs between performance, safety, and aesthetics.</li>
+              <li class="mb-2">Collaborates with other departments for integrated and efficient solutions.</li>
+              <div class="my-12">
+                <span class="px-3 rounded-full text-slate-700 bg-gray-200 mr-2 focus">XFLR</span>
+                <span class="px-3 rounded-full text-slate-700 bg-gray-200 mr-2 focus">Python 3.x</span>
+            </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+
+  
+      <div class="rounded-xl bg-gray-800 shadow-xl my-8 mx-10 md:w-1/3 lg:w-1/4">
+        <img src="./static/images/structures.webp" class="rounded-t-xl my-5" alt="">
+        <div class="text-white mx-4">
+            <div class="font-bold text-2xl">STRUCTURES</div>
+            <div class="py-2 lg:text-lg mb-2">
+                <ul class="list-disc list-inside pl-6">
+                    <li class="mb-2">Focuses on 3D CAD modeling, structural integrity, and weight reduction.</li>
+                    <li class="mb-2">Utilizes software like Solidworks and Fusion 360 for CAD modeling.</li>
+                    <li class="mb-2">Employs ANSYS static structural analysis to ensure stability via size/material adjustments.</li>
+                    <li class="mb-2">Implements Topology Optimization to identify stress-free areas, leading to aircraft weight reduction.</li>
+                    <div class="my-9">
+                      <span class="px-3 rounded-full text-slate-700 bg-gray-200 mr-2 focus">SOLIDWORKS</span>
+                      <span class="px-3 rounded-full text-slate-700 bg-gray-200 mr-2 focus">ANSYS</span>
+                  </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="rounded-xl bg-gray-800 shadow-xl my-8 mx-10 md:w-1/3 lg:w-1/4">
+      <img src="./static/images/cfd.png" class="rounded-t-xl my-5" alt="">
+      <div class="text-white mx-4">
+        <div class="font-bold text-2xl">CFD</div>
+        <div class="py-2 lg:text-lg mb-2">
+          <ul class="list-disc list-inside pl-6">
+            <li class="mb-2">Utilizes Computational Fluid Dynamics for fluid flow analysis.</li>
+            <li class="mb-2">Employs ANSYS Fluent to compute parameters like Lift, Drag, and Pressure.</li>
+            <li class="mb-2">Optimizes airfoil and fuselage design for reduced drag.</li>
+            <li class="mb-2">Enhances efficiency by ensuring optimal air flow.</li>
+            <li class="mb-2">Improves performance through simulation-based refinement.</li>
+            <div class="my-7">
+              <span class="px-3 rounded-full text-slate-700 bg-gray-200 mr-2 focus">ANSYS</span>
+          </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  
+
+  <div class="rounded-xl bg-gray-800 shadow-xl my-8 mx-10 md:w-1/3 lg:w-1/4">
+    <img src="./static/images/avionics.webp" class="rounded-t-xl my-5" alt="">
+    <div class="text-white mx-4">
+        <div class="font-bold text-2xl">AVIONICS</div>
+        <div class="py-2 lg:text-lg mb-2">
+            <ul class="list-disc list-inside pl-6">
+                <li class="mb-2">Manages electronic systems used on aircraft.</li>
+                <li class="mb-2">Selects motor, propeller, battery, ESC, and receiver based on requirements.</li>
+                <li class="mb-2">Conducts software analysis for optimal performance.</li>
+                <li class="mb-2">Performs experimental analysis for the best-suited drive train.</li>
+                <li class="mb-2">Collaborates with other departments for integrated solutions.</li>
+                <div class="my-6">
+                  <span class="px-3 py-1 rounded-full text-slate-700 bg-gray-200 mr-2 mb-2 focus">Microcontrollers</span>
+              </div>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="rounded-xl bg-gray-800 shadow-xl my-8 mx-10 md:w-1/3 lg:w-1/4">
+  <img src="./static/images/management.webp" class="rounded-t-xl my-5" alt="">
+  <div class="text-white mx-4">
+    <div class="font-bold text-2xl">MANAGEMENT</div>
+    <div class="py-2 lg:text-lg mb-2">
+      <ul class="list-disc list-inside pl-6">
+        <li class="mb-2">Gets sponsors for the team and promotes the team actively.</li>
+        <li class="mb-2">Manages all documents and permissions needed for events and competitions.</li>
+        <li class="mb-2">Coordinates logistics for team participation in various events.</li>
+        <li class="mb-2">Plans and executes fundraising campaigns for project funding.</li>
+        <li class="mb-2">Fosters collaboration between different team departments.</li>
+        <div class="my-5">
+          <span class="px-3 py-1 rounded-full text-slate-700 bg-gray-200 mr-2 mb-2 focus">CRM Tools</span>
+      </div>
+      </ul>
+    </div>
+  </div>
+</div>
+    </div>
+  
+    <!-- TEAM OF 2023 -->
+    <section id="Team" class="px-8 md:px-96">
+      <h1 class="md:text-4xl text-2xl font-medium my-8 text-white text-center tracking-widest">TEAM 2023</h1>
+    </section>
+    <div class="flex flex-wrap justify-center space-y-4 md:space-y-0 md:space-x-8 mx-3">
+      <div class="w-full md:w-1/2  max-w-sm bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+          <div class="flex flex-col items-center justify-center py-6">
+              <img class="w-32 h-32 mb-2 rounded-full shadow-lg" src="./static/images/dharrsan.png" alt="Dharrsan Amarnath image"/>
+              <h5 class="mb-1 text-2xl font-medium text-white">Dharrsan Amarnath</h5>
+              <span class="text-xl text-gray-400">CAPTAIN</span>
+              <div class="flex mt-2 space-x-3 md:mt-4">
+                  <a href="tel:+918870320770" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-800 hover:bg-blue-900">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone-call"><path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </a>
+                  <a href="https://www.linkedin.com/in/dharrsan-amarnath-75017221a/" class="inline-flex items-center text-sm font-medium text-center text-blue-800 hover:text-blue-900 rounded-lg focus:ring-4 focus:outline-none bg-white">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16" id="IconChangeColor"> <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" id="mainIconPathAttribute" ></path> </svg>
+                  </a>
+              </div>
+          </div>
+      </div>
+      <div class="w-full md:w-1/2 max-w-sm bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+        <div class="flex flex-col items-center justify-center py-6">
+            <img class="w-32 h-32 mb-2 rounded-full shadow-lg" src="./static/images/adib.png" alt="adib image"/>
+            <h5 class="mb-1 text-2xl font-medium text-white">Adib Moosa</h5>
+            <span class="text-xl text-gray-400">DESIGN HEAD</span>
+            <div class="flex mt-2 space-x-3 md:mt-4">
+                <a href="tel:+918870320770" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-800 hover:bg-blue-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone-call"><path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/adib-moosa/" class="inline-flex items-center text-sm font-medium text-center text-blue-800 hover:text-blue-900 rounded-lg focus:ring-4 focus:outline-none bg-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16" id="IconChangeColor"> <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" id="mainIconPathAttribute" ></path> </svg>
+                </a>
+            </div>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 mt-2 max-w-sm bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+      <div class="flex flex-col items-center justify-center py-6">
+          <img class="w-32 h-32 mb-2 rounded-full shadow-lg" src="./static/images/ruben.png" alt="ruben image"/>
+          <h5 class="mb-1 text-2xl font-medium text-white">Ruben Ghosalkar</h5>
+          <span class="text-xl text-gray-400">CAD HEAD</span>
+          <div class="flex mt-2 space-x-3 md:mt-4">
+              <a href="tel:+919930767450" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-800 hover:bg-blue-900">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone-call"><path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/ruben-ghosalkar-143277221/" class="inline-flex items-center text-sm font-medium text-center text-blue-800 hover:text-blue-900 rounded-lg focus:ring-4 focus:outline-none bg-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16" id="IconChangeColor"> <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" id="mainIconPathAttribute" ></path> </svg>
+              </a>
+          </div>
+      </div>
+      </div>
+    <div class="w-full md:w-1/2 mt-2  max-w-sm bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+    <div class="flex flex-col items-center justify-center py-6">
+        <img class="w-32 h-32 mb-2 rounded-full shadow-lg" src="./static/images/ananya.png" alt="ananya image"/>
+        <h5 class="mb-1 text-2xl font-medium text-white">Ananya Singh</h5>
+        <span class="text-xl text-gray-400">MANAGER</span>
+        <div class="flex mt-2 space-x-3 md:mt-4">
+            <a href="tel:+8468984451" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-800 hover:bg-blue-900">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone-call"><path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/ananyasingh1473/" class="inline-flex items-center text-sm font-medium text-center text-blue-800 hover:text-blue-900 rounded-lg focus:ring-4 focus:outline-none bg-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16" id="IconChangeColor"> <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" id="mainIconPathAttribute" ></path> </svg>
+            </a>
+        </div>
+    </div>
+    </div>
+    </div>>
+  
+<!-- <div class="my-4 md:mx-96 space-y-4 flex flex-wrap justify-center space-x-2 md:space-x-36">
+  <div class="w-44 mx-8 bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+    <div class="flex flex-col items-center justify-center pt-4">
+        <img class="w-16 h-16 mb-1 rounded-full shadow-lg" src="{{ url_for('static', filename='images/rinika.png') }}" alt="rinika image"/>
+        <h5 class="mb-1 text-lg font-medium text-white">Rinika Paramba</h5>
+        <span class="text-base text-gray-400">Jr Manager</span>
+    </div>
+  </div>
+  <div class="w-44 bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+    <div class="flex flex-col items-center justify-center py-4">
+        <img class="w-16 h-16 mb-1 rounded-full shadow-lg" src="{{ url_for('static', filename='images/krishna.png') }}" alt="krishna image"/>
+        <h5 class="mb-1 text-lg font-medium text-white">Krishna Arbatti</h5>
+        <span class="text-base text-gray-400">Aerodynamics | CFD</span>
+    </div>
+  </div>
+  <div class="w-44 bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+    <div class="flex flex-col items-center justify-center py-4">
+        <img class="w-16 h-16 mb-1 rounded-full shadow-lg" src="{{ url_for('static', filename='images/prajwal.png') }}" alt="rinika image"/>
+        <h5 class="mb-1 text-lg font-medium text-white">Prajwal Sutar</h5>
+        <span class="text-base text-gray-400">Aerodynamics</span>
+    </div>
+  </div>
+  <div class="w-44 bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+    <div class="flex flex-col items-center justify-center py-4">
+        <img class="w-16 h-16 mb-1 rounded-full shadow-lg" src="{{ url_for('static', filename='images/mukund.png') }}" alt="rinika image"/>
+        <h5 class="mb-1 text-lg font-medium text-white">Mukund Bharadwaj</h5>
+        <span class="text-base text-gray-400">Avionics</span>
+    </div>
+  </div>
+  <div class="w-44 bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+    <div class="flex flex-col items-center justify-center py-4">
+        <img class="w-16 h-16 mb-1 rounded-full shadow-lg" src="{{ url_for('static', filename='images/priyank.png') }}" alt="rinika image"/>
+        <h5 class="mb-1 text-lg font-medium text-white">Priyank Dasondi</h5>
+        <span class="text-base text-gray-400">Aerodynamics</span>
+    </div>
+  </div>  
+  <div class="w-44 bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+    <div class="flex flex-col items-center justify-center py-4">
+        <img class="w-16 h-16 mb-1 rounded-full shadow-lg" src="{{ url_for('static', filename='images/nessra.png') }}" alt="rinika image"/>
+        <h5 class="mb-1 text-lg font-medium text-white">Nessra Raje</h5>
+        <span class="text-base text-gray-400">Avionics</span>
+    </div>
+  </div>
+  <div class="w-44 bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+    <div class="flex flex-col items-center justify-center py-4">
+        <img class="w-16 h-16 mb-1 rounded-full shadow-lg" src="{{ url_for('static', filename='images/sudipta.png') }}" alt="rinika image"/>
+        <h5 class="mb-1 text-lg font-medium text-white">Sudipta Sharma</h5>
+        <span class="text-base text-gray-400">Avionics</span>
+    </div>
+  </div> 
+  <div class="w-44 bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+    <div class="flex flex-col items-center justify-center py-4">
+        <img class="w-16 h-16 mb-1 rounded-full shadow-lg" src="{{ url_for('static', filename='images/ajaybala.png') }}" alt="ajay image"/>
+        <h5 class="mb-1 text-lg font-medium text-white">Ajaybala G</h5>
+        <span class="text-base text-gray-400">Tech</span>
+    </div>
+  </div>  
+  <div class="w-44 bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+    <div class="flex flex-col items-center justify-center py-4">
+        <img class="w-16 h-16 mb-1 rounded-full shadow-lg" src="{{ url_for('static', filename='images/sai.png') }}" alt="rinika image"/>
+        <h5 class="mb-1 text-lg font-medium text-white">Sai Krishna</h5>
+        <span class="text-base text-gray-400">CAD</span>
+    </div>
+  </div>  
+  <div class="w-44 bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+    <div class="flex flex-col items-center justify-center py-4">
+        <img class="w-16 h-16 mb-1 rounded-full shadow-lg" src="{{ url_for('static', filename='images/nessra.png') }}" alt="rinika image"/>
+        <h5 class="mb-1 text-lg font-medium text-white">Parth Jadhav</h5>
+        <span class="text-base text-gray-400">CFD</span>
+    </div>
+  </div>  
+  <div class="w-44 bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+    <div class="flex flex-col items-center justify-center py-4">
+        <img class="w-16 h-16 mb-1 rounded-full shadow-lg" src="{{ url_for('static', filename='images/yeshwanth.png') }}" alt="rinika image"/>
+        <h5 class="mb-1 text-lg font-medium text-white">Yeshwanth</h5>
+        <span class="text-base text-gray-400">CAD</span>
+    </div>
+  </div>  
+
+
+</div> -->
+  
+    <div class="flex justify-center items-center">
+  <div class="flex md:w-1/2  justify-center flex-wrap gap-4 md:gap-6">
+    <div class="w-44 bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 mb-4 md:mb-0">
+        <div class="flex flex-col items-center justify-center py-4">
+            <img class="w-16 h-16 mb-1 rounded-full shadow-lg" src="./static/images/rinika.png" alt="Krishna Arbatti image"/>
+            <h5 class="mb-1 text-lg font-medium text-white">Rinika Paramba</h5>
+            <span class="text-base text-gray-400">Jr Manager</span>
+        </div>
+    </div>
+    <div class="w-44 bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 mb-4 md:mb-0">
+      <div class="flex flex-col items-center justify-center py-4">
+          <img class="w-16 h-16 mb-1 rounded-full shadow-lg" src="./static/images/krishna.png" alt="Krishna Arbatti image"/>
+          <h5 class="mb-1 text-lg font-medium text-white">Krishna Arbatti</h5>
+          <span class="text-base text-gray-400">Aerodynamics | CFD</span>
+      </div>
+  </div>
+  <div class="w-44 bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 mb-4 md:mb-0">
+    <div class="flex flex-col items-center justify-center py-4">
+        <img class="w-16 h-16 mb-1 rounded-full shadow-lg" src="./static/images/prajwal.png" alt="prajwal image"/>
+        <h5 class="mb-1 text-lg font-medium text-white">Prajwal Sutar</h5>
+        <span class="text-base text-gray-400">Aerodynamics</span>
+    </div>
+  </div>
+  <div class="w-44 bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 mb-4 md:mb-0">
+    <div class="flex flex-col items-center justify-center py-4">
+        <img class="w-16 h-16 mb-1 rounded-full shadow-lg" src="./static/images/priyank.png" alt="Krishna Arbatti image"/>
+        <h5 class="mb-1 text-lg font-medium text-white">Priyank Dasondi</h5>
+        <span class="text-base text-gray-400">Aerodynamics</span>
+    </div>
+  </div>
+  <div class="w-44 bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 mb-4 md:mb-0">
+    <div class="flex flex-col items-center justify-center py-4">
+        <img class="w-16 h-16 mb-1 rounded-full shadow-lg" src="./static/images/mukund.png" alt="Krishna Arbatti image"/>
+        <h5 class="mb-1 text-lg font-medium text-white">Mukund Bharadwaj</h5>
+        <span class="text-base text-gray-400">Avionics</span>
+    </div>
+  </div>
+  <div class="w-44 bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 mb-4 md:mb-0">
+    <div class="flex flex-col items-center justify-center py-4">
+        <img class="w-16 h-16 mb-1 rounded-full shadow-lg" src="./static/images/nessra.png" alt="Krishna Arbatti image"/>
+        <h5 class="mb-1 text-lg font-medium text-white">Nessra Raje</h5>
+        <span class="text-base text-gray-400">Avionics</span>
+    </div>
+  </div>
+  <div class="w-44 bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 mb-4 md:mb-0">
+    <div class="flex flex-col items-center justify-center py-4">
+        <img class="w-16 h-16 mb-1 rounded-full shadow-lg" src="./static/images/sudipta.png" alt="Krishna Arbatti image"/>
+        <h5 class="mb-1 text-lg font-medium text-white">Sudipta Sharma</h5>
+        <span class="text-base text-gray-400">Avionics</span>
+    </div>
+  </div>
+  <div class="w-44 bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 mb-4 md:mb-0">
+    <div class="flex flex-col items-center justify-center py-4">
+        <img class="w-16 h-16 mb-1 rounded-full shadow-lg" src="./static/images/sai.png" alt="Krishna Arbatti image"/>
+        <h5 class="mb-1 text-lg font-medium text-white">Sai Krishna</h5>
+        <span class="text-base text-gray-400">CAD</span>
+    </div>
+  </div>
+  <div class="w-44 bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 mb-4 md:mb-0">
+    <div class="flex flex-col items-center justify-center py-4">
+        <img class="w-16 h-16 mb-1 rounded-full shadow-lg" src="./static/images/ajaybala.png" alt="Krishna Arbatti image"/>
+        <h5 class="mb-1 text-lg font-medium text-white">Ajaybala G</h5>
+        <span class="text-base text-gray-400">Tech</span>
+    </div>
+  </div>
+  <div class="w-44 bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 mb-4 md:mb-0">
+    <div class="flex flex-col items-center justify-center py-4">
+        <img class="w-16 h-16 mb-1 rounded-full shadow-lg" src="./static/images/parth.png" alt="Krishna Arbatti image"/>
+        <h5 class="mb-1 text-lg font-medium text-white">Parth Jadhav</h5>
+        <span class="text-base text-gray-400">Aerodynamics | CFD</span>
+    </div>
+  </div>
+  <div class="w-44 bg-gray-800 border border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 mb-4 md:mb-0">
+    <div class="flex flex-col items-center justify-center py-4">
+        <img class="w-16 h-16 mb-1 rounded-full shadow-lg" src="./static/images/yeshwanth.jpg" alt="Krishna Arbatti image"/>
+        <h5 class="mb-1 text-lg font-medium text-white">Yeshwanth B</h5>
+        <span class="text-base text-gray-400">CAD</span>
+    </div>
+  </div>
+  </div>
+    </div>
+
+
+    <section id="Gallery" class="px-8 md:px-96">
+      <h1 class="md:text-4xl text-2xl font-medium my-8 text-white text-center tracking-widest">GALLERY</h1>
+    </section>
+
+    
+    <div class="px-4 mb-6 md:px-80 grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="grid gap-4">
+          <div>
+              <img class="h-auto max-w-full rounded-lg" src="./static/images/carousel1.png" alt="">
+          </div>
+          <div>
+              <img class="h-auto max-w-full rounded-lg" src="./static/images/carousel4.jpeg" alt="">
+          </div>
+          <div>
+              <img class="h-auto max-w-full rounded-lg" src="./static/images/carousel3.webp" alt="">
+          </div>
+      </div>
+      <div class="grid gap-4">
+          <div>
+              <img class="h-auto max-w-full rounded-lg" src="./static/images/carousel2.webp" alt="">
+          </div>
+          <div>
+              <img class="h-auto max-w-full rounded-lg" src="./static/images/carousel5.webp" alt="">
+          </div>
+          <div>
+              <img class="h-auto max-w-full rounded-lg" src="./static/images/carousel6.png" alt="">
+          </div>
+      </div>
+      <div class="grid gap-4">
+          <div>
+              <img class="h-auto max-w-full rounded-lg" src="./static/images/carousel7.webp" alt="">
+          </div>
+          <div>
+              <img class="h-auto max-w-full rounded-lg" src="./static/images/carousel9.JPG" alt="">
+          </div>
+          <div>
+              <img class="h-auto max-w-full rounded-lg" src="./static/images/carousel8.JPG" alt="">
+          </div>
+      </div>
+      <div class="grid gap-4">
+          <div>
+              <img class="h-auto max-w-full rounded-lg" src="./static/images/team2018.webp" alt="">
+          </div>
+          <div>
+              <img class="h-auto max-w-full rounded-lg" src="./static/images/team2019.webp" alt="">
+          </div>
+          <div>
+              <img class="h-auto max-w-full rounded-lg" src="./static/images/team2020.webp" alt="">
+          </div>
+      </div>
+    </div>
+
+    <h1 class="text-center text-gray-400">Team Vimaanas Inc © 2023</h1>
+    <h1 class="text-center text-xs mb-4 text-gray-400">made with ❤️ by dharrsan</h1>
+    
+    <script src="./static/js/loading.js"></script>
+</body>
+</html>
