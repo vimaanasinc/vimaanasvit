@@ -1,0 +1,69 @@
+/* custom.css */
+/* Additional CSS styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono:wght@700&display=swap');
+
+/* Styling for the download button */
+.download-button {
+  background-color: red;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.download-button:hover {
+  background-color: #d63434; /* Darker shade of red on hover */
+}
+
+@keyframes moveLogo {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-100%, -100%);
+    opacity: 0;
+  }
+}
+
+/* Apply the animation to the logo in loading screen */
+.logo-animation {
+  animation: moveLogo 2s ease-in-out forwards;
+}
+
+.navbar-link {
+  position: relative;
+}
+
+.navbar-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust as needed */
+  width: 0;
+  height: 2px;
+  background-color: red; /* Color of the slab */
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-link:hover::before {
+  width: 100%;
+}
+
+#mobile-menu {
+  animation: fade-in 0.3s ease-out;
+  transform-origin: top right;
+}
+
+@keyframes fade-in {
+  from {
+      opacity: 0;
+      transform: scale(0.95);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
